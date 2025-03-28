@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, #FFD700, #FFA500, #FF6347);
+    background-size: 400% 400%;
+    animation: gradientBG 10s infinite alternate;
+    color: white;
+    transition: background 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+body.dark-mode {
+    background: #1a1a1a;
+    color: #ddd;
+}
+
+.wraapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: #FFD700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #FFC107;
+}
+
+/* .catalog {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cart {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+} */
+
+.images {
+    margin: 20px;
+    height: 100vh;
+}
+/* Animación de fondo */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
